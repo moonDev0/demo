@@ -28,7 +28,7 @@
   </header>
   <div class="container">
     <nav>
-      <div class="side_navbar">
+      <div class="side_navbar" id="navigator">
         <span>Main Menu</span>
         <!-- <a href="#" class="active">Track File</a>
         <a href="#">Profile</a>
@@ -51,6 +51,7 @@
     </nav>
 
     <div class="main-body">
+      <i class="fas fa-hamburger" onclick="myX()"></i>
       <h2>Dashboard</h2>
       <div class="promo_card promo">
         <button>Create File</button>
@@ -155,5 +156,15 @@
 
     </div>
   </div>
+  <script>
+    function myX() {
+  var x = document.getElementById("navigator");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  </script>
 </body>
 </html>
