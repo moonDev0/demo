@@ -241,7 +241,7 @@ table td{
   }
   .promo_card{
     width: 100%;
-    font-size: 10px !important;
+    font-size: 10px !important;  
   }
   table{
     font-size: 10px !important;
@@ -254,5 +254,18 @@ table td{
   }
   .header{
     display: none;
+  }
+  .file{
+    width: 150px;
+  }
+  .documents{
+    justify-content: center;
+  }
+  .promo{
+    height: 100px;
+    font-size: 8px !important;
+  }
+  .more{
+    display: none !important;
   }
 }
