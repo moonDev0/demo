@@ -214,3 +214,45 @@ table td{
 .balance .info i{
   margin-right: 2px;
 }
+
+@media screen and (max-width:1230px) {
+  .history_lists{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sidebar{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width:650px) {
+  .side_navbar{
+    display: none;
+    /* position: absolute;
+    z-index: 100; */
+    background-color: white;
+  }
+  .container{
+    width: 100%;
+  }
+  .main-body{
+    width: 100%;
+  }
+  .promo_card{
+    width: 100%;
+    font-size: 10px !important;
+  }
+  table{
+    font-size: 10px !important;
+  }
+  table td{
+    font-size: 8px !important;
+  }
+  table td, th{
+    padding: 2px;
+  }
+  .header{
+    display: none;
+  }
+}
