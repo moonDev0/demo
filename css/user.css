@@ -212,6 +212,15 @@ h5{
   border-radius: 10px;
   text-align: center;
 }
+.search input{
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.search{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* Sidebar Section */
 .sidebar{
@@ -297,6 +306,10 @@ h5{
     /* position: absolute;
     z-index: 100; */
     background-color: white;
+  }
+  .search input{
+    width: 90%;
+    margin: 10px;
   }
   .container{
     width: 100%;
