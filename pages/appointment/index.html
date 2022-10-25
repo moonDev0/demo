@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>user Dashboard | ....</title>
+  <link rel="stylesheet" href="../../css/user.css" />
+  <!-- Font Awesome Cdn Link -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="#">LOGO</a>
+      <div class="search_box">
+        <input type="text" placeholder="Find Anything">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <div class="header-icons">
+      <i class="fas fa-bell"></i>
+      <div class="account">
+        <img src="./pic/img.jpg" alt="">
+        <h4>NAME</h4>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <nav>
+      <div class="side_navbar" id="navigator">
+        <span>Main Menu</span>
+        <a href="#">Book Appointment</a>
+
+        <div class="links">
+          <span>Quick Link</span>
+          <!-- <a href="./appointment/todaysapp.html">Todays Appointments</a>
+          <a href="./appointment/bookapp.html">Book An Appointment</a> -->
+          <a href="#">contact Admin</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-body">
+      <i class="fas fa-bars" onclick="myX()"></i>
+      <h2>Dashboard</h2>
+      <div class="promo_card">
+        <h1>Todays Appointments ....</h1>
+        <span>.</span>
+        <button>Book Appointment</button>
+      </div>
+
+      <div class="history_lists wrap">
+        <div class="card">
+            <div class="avatar">
+                <img src="../../images/avatar.jpg" alt="">
+            </div>
+            <div> <span>Name:</span> Ahmad Sample</div>
+            <div> <span>Purpose:</span> Industrial Training</div>
+            <div><span>Gende:</span> Male</div>
+            <div><span>Date</span>Todays Date</div>
+        </div>
+
+        <!-- <div class="card">
+            <div class="avatar">
+                <img src="../../images/avatar.jpg" alt="">
+            </div>
+            <div> <span>Name:</span> Ahmad Sample</div>
+            <div> <span>Purpose:</span> Industrial Training</div>
+            <div><span>Gende:</span> Male</div>
+            <div><span>Date</span>Todays Date</div>
+        </div> -->
+
+        <div class="card">
+            <div class="avatar">
+                <img src="../../images/avatar.jpg" alt="">
+            </div>
+            <div> <span>Name:</span> Ahmad Sample</div>
+            <div> <span>Purpose:</span> Industrial Training</div>
+            <div><span>Gende:</span> Male</div>
+            <div><span>Date</span>Todays Date</div>
+        </div>
+
+        <div class="card">
+            <div class="avatar">
+                <img src="../../images/avatar.jpg" alt="">
+            </div>
+            <div> <span>Name:</span> Ahmad Sample</div>
+            <div> <span>Purpose:</span> Industrial Training</div>
+            <div><span>Gende:</span> Male</div>
+            <div><span>Date</span>Todays Date</div>
+        </div>
+
+        <div class="card">
+            <div class="avatar">
+                <img src="../../images/avatar.jpg" alt="">
+            </div>
+            <div> <span>Name:</span> Ahmad Sample</div>
+            <div> <span>Purpose:</span> Industrial Training</div>
+            <div><span>Gende:</span> Male</div>
+            <div><span>Date</span>Todays Date</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h4>Updates</h4>
+      
+      <div class="balance">
+        <i class="fas fa-0 icon"></i>
+        <div class="info">
+          <h5>Staff Meetings</h5>
+          <span>Emergency Meeting By 8am 14 Dec</span>
+        </div>
+      </div>
+      <div class="balance">
+        <i class="fas fa-1 icon"></i>
+        <div class="info">
+          <h5>Call for papers</h5>
+          <span>Emergency Meeting By 8am 14 Dec</span>
+        </div>
+      </div>
+      <div class="balance">
+        <i class="fas fa-2 icon"></i>
+        <div class="info">
+          <h5>Staff Meetings</h5>
+          <span>Emergency Meeting By 8am 14 Dec</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function myX() {
+  var x = document.getElementById("navigator");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  </script>
+</body>
+</html>
