@@ -284,7 +284,43 @@ h5{
 .avatar span{
   width: 100%;
 }
+.avatar img{
+  width: 100px;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.column{
+  flex-direction: column;
+}
+.jcc{
+  justify-content: center !important;
+}
+.aic{
+  align-items: center;
+}
+.promo_card div{
+  text-align: center;
+}
+.doccontainer{
+  width: 100%;
+  /* background-color: #fff; */
+  height: 100%;
+  margin-top: 20px ;
+  display: none ;
+}
+.doccontainer form input{
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
 
+}
+
+.doccontainer form textarea{
+  text-align: center;
+}
 @media screen and (max-width:1230px) {
   .history_lists{
     display: flex;
@@ -296,6 +332,9 @@ h5{
   }
   h1{
     font-size: 12px;
+  }
+  .doccontainer form input{
+    width: 100% !important;
   }
   
 }
