@@ -259,7 +259,7 @@ h5{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 300px;
+  width: 220px;
   height: 300px;
   margin-top: 20px;
   border: 1px solid black;
@@ -274,8 +274,26 @@ h5{
   text-align: center;
 }
 .card img{
-  width: 100px;
+  /* width: 50px !important; */
   border-radius: 20px;
+}
+
+.card span{
+  font-weight: bold;
+}
+.card button{
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+
+}
+.card button:hover{
+  background-color: grey;
+  color: white;
 }
 .avatar{
   text-align: center;
@@ -285,7 +303,7 @@ h5{
   width: 100%;
 }
 .avatar img{
-  width: 100px;
+  width: 70px;
 }
 .flex{
   display: flex;
