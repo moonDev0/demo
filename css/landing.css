@@ -96,4 +96,7 @@ ul li:nth-child(4){
     .container{
         height: 100%;
     }
+    .nav-container{
+        display: none;
+    }
 }
