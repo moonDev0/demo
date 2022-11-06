@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/landing.css">
     <title>Document</title>
 </head>
@@ -25,16 +26,20 @@
         </div>
 
         <section class="hero">
-            <div class="hero-top">
-                
-            </div>
-
+                <div class="hero-flex">
+                    <div class="item" onclick="user()"> <i class="fa fa-user"></i> USER</div>
+                    <div class="item"> <i class="fa fa-book"></i> About</div>
+                    <div class="item"> <i class="fa fa-list"></i> Book Appointment</div>
+                </div>
         </section>
     </div>
     
     <script>
         function admin(){
              window.location.href='./adminlogin.html';
+}
+function user(){
+             window.location.href='./login.html';
 }
     </script>
 </body>
