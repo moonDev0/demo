@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./css/landing.css">
+    <title>Document</title>
 </head>
 <body>
+
     <div class="container">
-        <div class="left">
-            landing page
-            <h1>login</h1>
-            <a href="./login.html"> login</a>
-            <a href="./adminlogin.html">Admin login</a>
+        <div class="nav-container">
+            <nav>
+                <div class="nav-rigth">
+                    <div class="logo"><h2>LOGO</h2></div>
+                </div>
+                <ul class="nav-left">
+                    <li>Home</li>
+                    <li>Contact-Us</li>
+                    <li>About</li>
+                    <li onclick="admin()">Admin</li>
+                </ul>
+            </nav>
         </div>
-        <div class="right">
-            <h1>Create Appointments</h1>
-        </div>
+
+        <section class="hero">
+            <div class="hero-top">
+                
+            </div>
+
+        </section>
     </div>
+    
+    <script>
+        function admin(){
+             window.location.href='./adminlogin.html';
+}
+    </script>
 </body>
 </html>
