@@ -19,7 +19,7 @@ html body{
 
 }
 ul li{
-    color: white;
+    color: rgb(243, 225, 123);
     font-weight: bold;
     
 }
@@ -48,7 +48,7 @@ ul li{
     cursor: pointer;
 }
 ul li:nth-child(4){
-    background-color: aliceblue;
+    background-color: rgb(243, 225, 123);
     padding: 20px 50px 20px 50px;
     color: black;
     border-radius: 30px;
