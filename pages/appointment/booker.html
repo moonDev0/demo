@@ -11,7 +11,7 @@
 <body>
   <header class="header">
     <div class="logo">
-      <a href="#">LOGO</a>
+      <a href="#"><img src="/images/neximLOGO.png" alt="" width="100px" length="40px"></a>
       <div class="search_box">
         <input type="text" placeholder="Find Anything">
         <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
@@ -21,7 +21,7 @@
     <div class="header-icons">
       <i class="fas fa-bell"></i>
       <div class="account">
-        <img src="./pic/img.jpg" alt="">
+        <img src="/images/avatar.jpg" alt="">
         <h4>NAME</h4>
       </div>
     </div>
@@ -46,7 +46,7 @@
       <i class="fas fa-bars" onclick="myX()"></i>
       <h2>Dashboard</h2>
       <div class="promo_card">
-        <h1>Book Appointment ....</h1>
+        <h1>Create Appointment ....</h1>
         <span>.</span>
             <a href="../user.html"><button>Home</button></a>
       </div>
@@ -64,20 +64,29 @@
                   </div>
 
                   <div>
+                    <input type="number" name="contact" id="contact" placeholder="Phone Number">
+                </div>
+
+                <div>
+                  <input type="text" name="org" id="org" placeholder="Your Institution">
+              </div>
+
+                  <div>
                     <input type="email" name="lname" id="lname" placeholder="Office Email">
                 </div>
-                
+                      
                     <div>
-                        <select name="gender" id="gender"placeholder="gender" >
+                        <select name="gender" id="gender" placeholder="gender" style="width: 80%; padding:10px;">
                             <option value="Gender">Gender</option>
                             <option value="male"> Male</option>
                             <option value="Female">Female</option>
                         </select>
                     </div>
+                    <br>
                     <div>
                         <!-- <h5>Purpose Of Visit</h5> -->
                         <textarea name="purpose" id="" cols="30" placeholder="Purpose of Visit" rows="10"></textarea>
-                    </div>
+                    </div><br>
                     <div>
                         <a style="padding: 5px; background-color: white;" href="../success.html">Submit</a>
                     </div>
@@ -88,7 +97,7 @@
     </div>
 
     <div class="sidebar">
-      <h4>Updates</h4>
+      <h4><i class="fa fa-bell" aria-hidden="true"></i> Notifications</h4>
       
       <div class="balance">
         <i class="fas fa-0 icon"></i>
