@@ -58,20 +58,27 @@ ul li:nth-child(4){
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.hero:nth-child(2){
+    margin-top: 100px !important;
+}
+.item2{
+    margin-top: 50px !important ;
 }
 .hero-flex{
     gap: 50px;
     display: flex;
-    margin-top: 100px;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 100px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
 }
 .item{
     border-radius: 10px;
     color: white;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border: 1px solid aliceblue;
     display: flex;
     flex-direction: column;
