@@ -78,7 +78,7 @@ ul li:nth-child(4){
     border-radius: 10px;
     color: white;
     width: 250px;
-    height: 250px;
+    height: 200px;
     border: 1px solid aliceblue;
     display: flex;
     flex-direction: column;
