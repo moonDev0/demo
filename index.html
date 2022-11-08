@@ -29,10 +29,10 @@
         <section class="hero">
                 <div class="hero-flex">
                     <div class="item" onclick="user()"> <i class="fa fa-user"></i> USER</div>
-                    <div class="item"> <i class="fa fa-book"></i> About</div>
-                    <div class="item"> <i class="fa fa-list"></i> Book Appointment</div>
-                    <div class="item"> <i class="fa fa-bell-concierge"></i> Reception</div>
-                    <div class="item"> <i class="fa fa-solids fa-user-shield"></i> Security</div>
+                    <div class="item" onclick="about()">  <i class="fa fa-book"></i> About</div>
+                    <div class="item" onclick="book()"> <i class="fa fa-list"></i> Book Appointment</div>
+                    <div class="item" onclick="reception()"> <i class="fa fa-bell-concierge"></i> Reception</div>
+                    <div class="item" onclick="security()"> <i class="fa fa-solids fa-user-shield"></i> Security</div>
                 </div>
         </section>
     </div>
@@ -47,6 +47,10 @@
 
             function Reception(){
              window.location.href='./reception.html';
+            }
+
+            function about(){
+             window.location.href='./about.html';
             }
 
 
