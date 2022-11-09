@@ -30,11 +30,8 @@
     <nav>
       <div class="side_navbar" id="navigator">
         <span>Main Menu</span>
-        <!-- <a href="../user.html">Home</a> -->
-        <a href="../appointment/booker.html">Create Appointment</a>
-        <a href="../drive.html">Documents</a>
-        <a href="../printid.html">Print ID</a>
-
+        <a href="./reception/index.html">Home</a>
+        <!-- <a href="../user.html">print Id</a> -->
 
         <div class="links">
           <span>Quick Link</span>
@@ -48,14 +45,14 @@
 
     <div class="main-body">
       <i class="fas fa-bars" onclick="myX()"></i>
-      <h2>Dashboard</h2>
+      <!-- <h2>Dashboard</h2> -->
       <div class="promo_card">
-        <h1>Receptions Dashboard ....</h1>
+        <h1>Print ID card ....</h1>
         <span>.</span>
-      <a href="../appointment/booker.html">  <button>Create Appointment</button></a>
+            <a href="../user.html"><button>Home</button></a>
       </div>
-      <h5>Todays Appointments</h5>
-      <div class="history_lists wrap">
+
+      <div class="history_lists  booker-container">
 
         <div class="card">
             <div class="avatar">
@@ -65,36 +62,11 @@
             <div> <span>Purpose:</span> Industrial Training</div>
             <div><span>Gende:</span> Male</div>
             <div><span>Date</span>Todays Date</div>
-            <div><button onclick="printer()">Print ID</button>
+            <div><button onclick="idcard()">Print ID</button>
             <button>checked-Inn</button></div>
         </div>
 
         <div class="card">
-          <div class="avatar">
-              <img src="../../images/avatar.jpg" alt="">
-          </div>
-          <div> <span>Name:</span> Ahmad Sample</div>
-          <div> <span>Purpose:</span> Industrial Training</div>
-          <div><span>Gende:</span> Male</div>
-          <div><span>Date</span>Todays Date</div>
-          <div><button>Print ID</button>
-          <button>checked-Inn</button></div>
-      </div>
-
-      <div class="card">
-        <div class="avatar">
-            <img src="../../images/avatar.jpg" alt="">
-        </div>
-        <div> <span>Name:</span> Ahmad Sample</div>
-        <div> <span>Purpose:</span> Industrial Training</div>
-        <div><span>Gende:</span> Male</div>
-        <div><span>Date</span>Todays Date</div>
-        <div><button>Print ID</button>
-        <button>checked-Inn</button></div>
-    </div>
-        
-
-        <!-- <div class="card">
             <div class="avatar">
                 <img src="../../images/avatar.jpg" alt="">
             </div>
@@ -102,9 +74,24 @@
             <div> <span>Purpose:</span> Industrial Training</div>
             <div><span>Gende:</span> Male</div>
             <div><span>Date</span>Todays Date</div>
-        </div> -->
+            <div><button onclick="idcard()">Print ID</button>
+            <button>checked-Inn</button></div>
+        </div>
 
-        
+        <div class="card">
+            <div class="avatar">
+                <img src="../../images/avatar.jpg" alt="">
+            </div>
+            <div> <span>Name:</span> Ahmad Sample</div>
+            <div> <span>Purpose:</span> Industrial Training</div>
+            <div><span>Gende:</span> Male</div>
+            <div><span>Date</span>Todays Date</div>
+            <div><button onclick="idcard()">Print ID</button>
+            <button>checked-Inn</button></div>
+        </div>
+       
+            
+
       </div>
     </div>
 
@@ -143,9 +130,8 @@
     x.style.display = "none";
   }
 }
-
-function printer(){
-  window.location.href='../printid.html';
+function idcard(){
+    window.location.href='./idpage.html';
 }
   </script>
 </body>
