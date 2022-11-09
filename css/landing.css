@@ -100,6 +100,24 @@ ul li:nth-child(4){
     color: black;
     cursor: pointer;
 }
+@media screen and (max-width:800px) {
+    ul li{
+        font-size: 10px;
+    }
+    .logo img{
+        width: 80px;
+    }
+    ul li:nth-child(4){
+        background-color: rgb(243, 225, 123);
+        padding: 10px 30px 10px 30px;
+        color: black;
+        border-radius: 30px;
+        
+    }
+    
+    
+}
+
 
 @media screen and (max-width:670px) {
 
@@ -107,6 +125,17 @@ ul li:nth-child(4){
         height: 100%;
     }
     .nav-container{
-        display: none;
+        /* display: none; */
     }
+}
+
+@media screen and (max-width:520px) {
+
+     ul li:nth-child(1){
+      display: none;
+    }
+    ul li:nth-child(2){
+        display: none;
+      }
+      
 }
