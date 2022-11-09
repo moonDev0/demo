@@ -10,13 +10,30 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #444;
+    /* background: #444; */
+    /* background-image: url(./images/bgone.jpg); */
+    background-image:linear-gradient(black, green, red),
+    url(./images/bgone.jpg);
+    background-position: center;
+    background-blend-mode: saturation;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 .login{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.first-container{
+    width: 100vw;
+    height:100vh;
+    background-color: black;
+    display: flex;justify-content: center;
+    align-items: center;
+    opacity: 90%;
+}
+
 .container {
     position: relative;
     width: 70vw;

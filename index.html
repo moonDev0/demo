@@ -20,7 +20,7 @@
                 <ul class="nav-left">
                     <li>Home</li>
                     <li>Contact-Us</li>
-                    <li>About</li>
+                    <li onclick="about()">About</li>
                     <li onclick="admin()">Admin</li>
                 </ul>
             </nav>
@@ -29,10 +29,13 @@
         <section class="hero">
                 <div class="hero-flex">
                     <div class="item" onclick="user()"> <i class="fa fa-user"></i> USER</div>
-                    <div class="item"> <i class="fa fa-book"></i> About</div>
-                    <div class="item"> <i class="fa fa-list"></i> Book Appointment</div>
-                    <div class="item"> <i class="fa fa-bell-concierge"></i> Reception</div>
-                    <div class="item"> <i class="fa fa-solid fa-user-shield"></i> Security</div>
+                    <div class="item" onclick="about()">  <i class="fa fa-book"></i> About</div>
+                    <div class="item" onclick="book()"> <i class="fa fa-list"></i> Book Appointment</div>  
+                    <div class="item" onclick="Reception()"> <i class="fa fa-bell-concierge"></i> Reception</div>
+                </div>
+
+                <div class="hero-flex item2">
+                    <div class="item" onclick="security()"> <i class="fa fa-solids fa-user-shield"></i> Security</div>
                 </div>
         </section>
     </div>
@@ -41,9 +44,39 @@
         function admin(){
              window.location.href='./adminlogin.html';
             }
-function user(){
-             window.location.href='./login.html';
+            function user(){
+                 window.location.href='./login.html';
             }
+
+            function Reception(){
+             window.location.href='./reception.html';
+            }
+
+            function book(){
+             window.location.href='./pages/book.html';
+            }
+
+
+            function about(){
+             window.location.href='./about.html';
+            }
+
+            function about(){
+             window.location.href='./about.html';
+            }
+
+            function security(){
+             window.location.href='./security.html';
+            }
+
+
+//             function changeCss () {
+//   var bodyElement = document.querySelector("body");
+//   var navElement = document.querySelector("nav");
+//   this.scrollY > 50 ? navElement.style.backgroundColor = 'black' : navElement.style.backgroundColor = 'rgb(68, 66, 66)';
+// }
+
+// window.addEventListener("scroll", changeCss , false);
     </script>
 </body>
 </html>
