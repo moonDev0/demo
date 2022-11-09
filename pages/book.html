@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
-    <h1>book pre-appointment page</h1>
-    
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="../images/neximLOGO.ico" alt="">
+                </div>
+                <ul>
+                    <li onclick="home()"> <i class="fa fa-home"></i> Home</li>
+                    <li onclick="about()"> <i class="fa fa-book"></i> About</li>
+                    <li> <i class="fa fa-phone"></i> Contact Us</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+           <div class="booking-form">
+               <form>
+                    <div>
+                        <label for="fname">ENTER FULL NAME</label> <br>
+                        <input type="text" name="fname" placeholder="FULL NAME" id="">
+                    </div>
+                    <div>
+                        <label for="email"> Personal Email</label> <br>
+                        <input type="email" placeholder="EMAIL" name="email" id="">
+                    </div>
+                    <div>
+                        <label for="mail2"> OFFICE EMAIL/ID</label> <br>
+                        <input type="text" placeholder="OFFICE EMAIL" name="mail2" id="">
+                    </div>
+                    <div>
+                        <label for="date"> DATE AND TIME OF VISIT</label> <br>
+                        <input type="datetime-local" name="date" id="">
+                    </div>
+                    <!-- <div>
+                        <input type="text" placeholder="WHO ARE YOU VISITING">
+                    </div> -->
+                    <div>
+                        <label for="purpoe"> PURPOSE OF VISIT</label> <br>
+                        <textarea name="purpoe" placeholder="PURPOSE OF VISIT" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <a style="color: white;" href="#">SUBMT</a>
+                    </div>
+               </form>
+           </div>
+        </main>
+    </div>
+ <script>
+     function home(){
+         window.location.href='../index.html';
+     }
+
+     function about(){
+         window.location.href='../about.html';
+     }
+ </script>
 </body>
 </html>
