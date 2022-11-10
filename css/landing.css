@@ -140,3 +140,13 @@ ul li:nth-child(4){
       }
       
 }
+@media screen and (max-width:500px){
+.item{
+    width: 90%;
+}
+}
+@media screen and (max-width:360px){
+    ul li:nth-child(3){
+        display: none;
+      }
+}
