@@ -78,6 +78,7 @@
                <h4 class="name">Muneer-sadiq</h4>
                <p>Banking in planet Mars Memo, based on human</p>
                <i title="Edit file" class="fa fa-edit"></i>
+               <i title="download Attachment" class="fa fa-download"></i>
                <i onclick="comment()"  title="Add comment" class="fa fa-comment">               </i>
 
                <i class="reciever-cont" id="com" style="display: none;" >
@@ -171,18 +172,30 @@ function mailsubmit(){
 
 function forward() {
   var x = document.getElementById("cont");
+  var z = document.getElementById("com");
+  var w = document.getElementById("spam");
   if (x.style.display === "none") {
+    w.style.display = "none";
+    z.style.display ="none";
     x.style.display = "block";
   } else {
+    w.style.display = "none";
+    z.style.display = "none";
     x.style.display = "none";
   }
 }
 
 function comment() {
   var x = document.getElementById("com");
+  var z = document.getElementById("spam");
+  var w = document.getElementById("cont");
   if (x.style.display === "none") {
     x.style.display = "block";
+    z.style.display = "block";
+    w.style.display = "none";
   } else {
+    z.style.display = "none";
+    w.style.display = "none";
     x.style.display = "none";
   }
 }
