@@ -74,12 +74,20 @@
       <h5>Outgoing files</h5>
       <div class="history_lists wrap">
        <div class="mail-container">
-           <div class="mail" style="cursor: pointer;">
+           <div id="mail" class="mail" style="cursor: pointer;">
                <h4 class="name">Muneer-sadiq</h4>
                <p>Banking in planet Mars Memo, based on human</p>
-               <i title="Delete" class="fa fa-trash"></i>
-               <i title="Move to Outgoing"> <h5 style="color: white; background-color: black; padding: 8px; font-size: 10px; border-radius: 10px;">Register as Outgoing</h6></i>
-               <!-- <i title="Archive" class="fa fa-archive"></i> -->
+               <i title="Edit file" class="fa fa-edit"></i>
+               <i title="Add comment" class="fa fa-comment"></i>
+               <i title="Move to Outgoing">
+                  <h6 onclick="forward()" style="color: white; background-color: black; padding: 8px; font-size: 10px; border-radius: 10px;">Forward</h6>
+                </i>
+
+
+              <i class="reciever-cont" id="cont" style="display: none;" >
+                <input class="reciever" type="email" placeholder="Recievers Email" id="reciever"> <br>
+                <input onclick="forwardok()" class="reciever" type="submit" name="" id="">
+            </i>
            </div>
        </div>
       </div>
@@ -133,6 +141,29 @@ function send() {
 function mailsubmit(){
     document.getElementById("create-mail").style.display = "none";
     alert('mail sent');
+}
+
+// function forward() {
+//   var y = document.getElementById("forward");
+//   // var x = document.getElementById("doc");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//     y.style.display="none";
+
+//   } else {
+//     x.style.display = "none";
+//     y.style.display="flex";
+//   }
+// }
+function forward(){
+  var one = document.getElementById("cont");
+  one.style.display = "block";
+}
+
+function forwardok(){
+  var one = document.getElementById("mail");
+  alert('sent Successfully !')
+  one.style.display = "none";
 }
 
   </script>

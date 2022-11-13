@@ -22,3 +22,15 @@
 .create-mail{
     display: none;
 }
+.reciever{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-left: -200px;
+    margin-top: 20px;
+    z-index: 20;
+}
+/* .reciever-cont{
+    width: 50px;
+} */
