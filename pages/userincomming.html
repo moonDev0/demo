@@ -78,7 +78,13 @@
                <h4 class="name">Muneer-sadiq</h4>
                <p>Banking in planet Mars Memo, based on human</p>
                <i title="Edit file" class="fa fa-edit"></i>
-               <i title="Add comment" class="fa fa-comment"></i>
+               <i onclick="comment()"  title="Add comment" class="fa fa-comment">               </i>
+
+               <i class="reciever-cont" id="com" style="display: none;" >
+                <textarea class="reciever" name="text" placeholder="hello" id="" cols="30" rows="10"></textarea> 
+                <br>
+                 <input onclick="commentok()" class="reciever" style="margin-left: -270px;" type="submit" name="" id="">
+             </i>
                <i title="Move to Outgoing">
                   <h6 onclick="forward()" style="color: white; background-color: black; padding: 8px; font-size: 10px; border-radius: 10px;">Forward</h6>
                 </i>
@@ -155,9 +161,35 @@ function mailsubmit(){
 //     y.style.display="flex";
 //   }
 // }
-function forward(){
-  var one = document.getElementById("cont");
-  one.style.display = "block";
+
+function forward() {
+  var x = document.getElementById("cont");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function comment() {
+  var x = document.getElementById("com");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+// function forward(){
+//   var one = document.getElementById("cont");
+//   one.style.display = "block";
+// }
+function commentok(){
+  var one = document.getElementById("com");
+  alert('comment added Successfully !')
+  one.style.display = "none";
 }
 
 function forwardok(){
