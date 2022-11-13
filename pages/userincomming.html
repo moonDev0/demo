@@ -74,7 +74,7 @@
       <h5>Incoming files</h5>
       <div class="history_lists wrap">
        <div class="mail-container">
-           <div id="mail" class="mail" style="cursor: pointer;">
+           <div id="mail" class="mail" onclick="mail()" style="cursor: pointer;">
                <h4 class="name">Muneer-sadiq</h4>
                <p>Banking in planet Mars Memo, based on human</p>
                <i title="Edit file" class="fa fa-edit"></i>
@@ -93,8 +93,15 @@
               <i class="reciever-cont" id="cont" style="display: none;" >
                 <input class="reciever" type="email" placeholder="Recievers Email" id="reciever"> <br>
                 <input onclick="forwardok()" class="reciever" type="submit" name="" id="">
-            </i>
+             </i>
+
+             <span class="spam" id="spam">
+               <i class="fa fa-arrow-alt-circle-up"></i>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda, numquam a
+                 ut distinctio vero cumque possimus aliquid ex quo nam.</p>
+             </span>
            </div>
+
        </div>
       </div>
     </div>
@@ -180,6 +187,15 @@ function comment() {
   }
 }
 
+
+function mail() {
+  var x = document.getElementById("spam");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 
 // function forward(){
