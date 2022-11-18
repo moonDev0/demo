@@ -158,6 +158,10 @@ nav{
   align-items: center;
   justify-content: space-between;
 }
+.list table td:hover{
+  color: red !important;
+}
+
 .wrap{
   flex-wrap: wrap;
   justify-content: center;
