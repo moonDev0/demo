@@ -158,8 +158,10 @@ nav{
   align-items: center;
   justify-content: space-between;
 }
-.list table td:hover{
-  color: red !important;
+.list table tr:hover td{
+  color: black;
+  font-weight: bold;
+  background-color: #eee;
 }
 
 .wrap{
