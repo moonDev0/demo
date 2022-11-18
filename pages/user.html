@@ -56,8 +56,32 @@
         <button  onclick="window.open('./track.html','_self')">Track File</button>
         <!-- <button class="more">More</button> -->
       </div>
+      <div style="display: none; justify-content: center; flex-direction: column;" class="doccontainer" id="doc">
+        <h3>Create Document</h3>
+        <form style="width: 400px; flex-direction: column;">
+          <div>
+            <input type="text" name="name" placeholder="File Name">
+          </div>
 
-      <div class="history_lists">
+          <div>
+            <input type="text" name="fileNo" placeholder="File Number">
+          </div>
+
+          <div>
+            <input type="file" name="file" placeholder="file">
+          </div>
+
+          <div>
+            <textarea name="textarea" placeholder="Additional Text" id="" cols="30" rows="10"></textarea>
+          </div>
+
+        </form>
+
+        <div>
+          <button style="padding:10px; border-radius: 10px;"  onclick="window.open('./success.html','_self')">Submit</button>
+        </div>
+      </div>
+      <div class="history_lists" id="files">
         <div class="list1 list">
           <div class="row">
             <h4>Incoming Files</h4>
@@ -211,6 +235,20 @@
     </div>
   </div>
   <script>
+
+function createDoc() {
+  var y = document.getElementById("files");
+  var x = document.getElementById("doc");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display="none";
+
+  } else {
+    x.style.display = "none";
+    y.style.display="flex";
+  }
+}
+
     function myX() {
   var x = document.getElementById("navigator");
   if (x.style.display === "none") {
