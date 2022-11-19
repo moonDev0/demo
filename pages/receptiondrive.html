@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>user Dashboard | ....</title>
-  <link rel="stylesheet" href="../css/user.css"/>
+  <link rel="stylesheet" href="../css/user.css" />
   <!-- Font Awesome Cdn Link -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
@@ -30,21 +30,17 @@
     <nav>
       <div class="side_navbar" id="navigator">
         <span>Main Menu</span>
-        <!-- <a href="#" class="active">Track File</a>
-        <a href="#">Profile</a>
-        <a href="#">History</a>
-        <a href="#">Emails</a>
-        <a href="#">Memo's</a>-->
-        <a href="./reception/index.html">Home</a>
-        <a href="#">My Documnets</a> 
-        <a onclick="createDoc()" href="#">Register New File</a>
-        <!-- <a href="./reception/incoming.html">Incoming Files</a>
-        <a href="./reception/outgoing.html">Outgoing File</a>  -->
-        <!-- <a href="#">New/Recieved Files</a>   -->
+        <a href="./reception/index.html" class="active">Home</a> 
+        <!-- <a href="./profile.html">Profile</a> -->
+        <!-- <a href="#">History</a> -->
+        <!-- <a href="./mails.html">Emails</a>         -->
+        <!-- <a href="drive.html">Documents</a> -->
+        <!-- <a href="./appointment/index.html">Appointment</a> -->
 
         <div class="links">
           <span>Quick Link</span>
-          <a href="./appointment/booker.html">Book Appointment</a>
+          <a href="./appointment/">Appointments</a>
+          <!-- <a href="./appointment/bookapp.html">Book An Appointment</a> -->
           <a href="#">contact Admin</a>
           <a href="#">Security</a>
         </div>
@@ -53,36 +49,29 @@
 
     <div class="main-body">
       <i class="fas fa-bars" onclick="myX()"></i>
-      <h2>My Documents</h2>
-      <div class="promo_card promo">
-        <button onclick="createDoc()" id="createDoc">Register New File</button>
+      <h2>Documents Dashboard</h2>
+      <div class="promo_card">
+        <button onclick="createDoc()" id="createDoc">Register || Create File</button>
         <!-- <button>Send File</button> -->
-        <button  onclick="window.open('./track.html','_self')">Track File</button>
-        <button class="more">More</button>
-      </div><br>
-
-      <!-- <div class="history_lists">  
-        <div class="list1">
-          <div class="row">
-            <h4>History</h4>
-            <a href="#">See all</a>
-          </div>
-
-        </div> -->
-
-      <!-- </div> -->
+        <div class="search">
+          <input type="search" name="searchfie" id="fileSearch" placeholder="Track a File">
+          <input type="submit">
+      </div>
+        <!-- <button>Track File</button> -->
+        <!-- <button class="more">More</button> -->
+      </div>
       <div style="display: none; justify-content: center; flex-direction: column;" class="doccontainer" id="doc">
         <h3>Create Document</h3>
         <form style="width: 400px; flex-direction: column;">
           <div>
-            <input type="text" name="name" placeholder="Maill Bearer Name">
-          </div>
-          <div>
-              <input type="text" placeholder="Type of Mail" name="" id="">
+            <input type="text" name="name" placeholder="File Name">
           </div>
 
           <div>
-            <input type="text" name="fileNo" placeholder="File Number">
+            <input type="text" name="fileNo" placeholder="Destination">
+          </div>
+          <div>
+            <input type="text" name="fileNo" placeholder="Email">
           </div>
 
           <div>
@@ -90,131 +79,165 @@
           </div>
 
           <div>
-            <textarea name="textarea" placeholder="Purpose Of Mail" id="" cols="30" rows="10"></textarea>
+            <textarea name="textarea" placeholder="Additional Text" id="" cols="30" rows="10"></textarea>
           </div>
 
         </form>
 
         <div>
-          <button style="padding:10px; border-radius: 10px; background-color: black; color: white; cursor: pointer;"  onclick="reg()">Register as Incoming Mail</button>
+          <button style="padding:10px; border-radius: 10px;" >Submit</button>
         </div>
       </div>
-      <div class="history_lists">
-        <div class="list1">
+
+      <div class="history_lists" id="files">
+        <div class="list1 list">
           <div class="row">
-            <h4>History</h4>
+            <h4>Incoming Files</h4>
             <a href="#">See all</a>
+          </div>
+          <div class="doc-text" id="docfile">
+            <span>Sender: <h3>Nasa</h3></span>
+            <span>Subject: <h3>Pluto Demotion Day</h3></span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, quo.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, officiis.</p>
+
+            <br>
+            <i class="fa fa-comment">ADD COMMENT</i> 
+            <br>
+            <br>
+            <textarea name="" id="" cols="30" rows="5">Add your comment</textarea>
+              <br>
+            <i class="fa fa-download"> Download Attachment</i> 
+            <br>
+            <button onclick="docfile()">Close</button>
+            <button onclick="docfile()">Return</button>
+            <button>Forward</button>
           </div>
           <table>
             <thead>
               <tr>
-                <th>#</th>
+                <th>ID</th>
                 <th>Dates</th>
-                <th>Name</th>
-                <th>Type</th>
+                <th>Title</th>
                 <th>Email</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
+              <tr onclick="docfile()">
+                <td>101</td>
                 <td>2, Aug, 2022</td>
                 <td>Sam Tonny</td>
-                <td>Premimum</td>
                 <td>example@mail.com</td>
+                <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
-                <td>2</td>
+               
+              <tr onclick="docfile()">
+                <td>102</td>
                 <td>29, July, 2022</td>
-                
                 <td>Code Info</td>
-                <td>Silver</td>
                 <td>example@mail.com</td>
+                <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
-                <td>3</td>
+
+              <tr onclick="docfile()">
+                <td>104</td>
                 <td>15, July, 2022</td>
-              
                 <td>Jhon David</td>
-                <td>Startup</td>
                 <td>example@mail.com</td>
+                <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
-                <td>4</td>
+
+              <tr onclick="docfile()">
+                <td>103</td>
                 <td>5, July, 2022</td>
                 <td>Salina Gomiz</td>
-                <td>Premimum</td>
                 <td>example@mail.com0</td>
+                <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
-                <td>5</td>
+
+              <tr onclick="docfile()">
+                <td>105</td>
                 <td>29, June, 2022</td>
                 <td>Gomiz</td>
-                <td>Gold</td>
                 <td>example@mail.com</td>
+                <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
-                <td>6</td>
+              <tr onclick="docfile()">
+                <td>106</td>
                 <td>28, June, 2022</td>
                 <td>Elyana Jhon</td>
-                <td>Premimum</td>
                 <td>example@mail.com</td>
+                <td> <i class="fa fa-edit"></i> </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="list2">
+        <div class="list2 list">
           <div class="row">
-            <h4>Documnets</h4>
-            <a href="#">Create Document</a>
+            <h4>Outgoing Files</h4>
+            <a href="#">See all</a>
           </div>
           <table>
             <thead>
               <tr>
-                <th>#</th>
+                <th>ID</th>
+                <th>Dates</th>
                 <th>Title</th>
-                <th>Type</th>
-                <th>Uplaoded</th>
+                <th>Email</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>CNIC</td>
-                <td>PDF</td>
-                <td>20</td>
+              <tr onclick="docfile()">
+                <td>201</td>
+                <td>2, Aug, 2022</td>
+                <td>Sam Tonny</td>
+                <td>example@mail.com</td>
+                <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
-                <td>2</td>
-                <td>Passport</td>
-                <td>PDF</td>
-                <td>12</td>
+
+              <tr onclick="docfile()">
+                <td>202</td>
+                <td>29, July, 2022</td>
+                
+                <td>Code Info</td>
+                <td>example@mail.com</td>
+                <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
-                <td>3</td>
-                <td>Licence</td>
-                <td>PDF</td>
-                <td>9</td>
+
+              <tr onclick="docfile()">
+                <td>203</td>
+                <td>15, July, 2022</td>
+              
+                <td>Jhon David</td>
+                <td>example@mail.com</td>
+                <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
-                <td>4</td>
-                <td>Pic</td>
-                <td>Jpg</td>
-                <td>22</td>
-              </tr> 
-              <tr>
-                <td>5</td>
-                <td>CNIC</td>
-                <td>Jpg</td>
-                <td>22</td>
-              </tr> 
-              <tr>
-                <td>6</td>
-                <td>Docx</td>
-                <td>Word</td>
-                <td>22</td>
-              </tr> 
+
+              <tr onclick="docfile()">
+                <td>204</td>
+                <td>5, July, 2022</td>
+                <td>Salina Gomiz</td>
+                <td>example@mail.com0</td>
+                <td> <i class="fa fa-edit"></i> </td>
+              </tr>
+
+              <tr onclick="docfile()">
+                <td>205</td>
+                <td>29, June, 2022</td>
+                <td>Gomiz</td>
+                <td>example@mail.com</td>
+                <td> <i class="fa fa-edit"></i> </td>
+              </tr>
+
+              <tr onclick="docfile()">
+                <td>206</td>
+                <td>28, June, 2022</td>
+                <td>Elyana Jhon</td>
+                <td>example@mail.com</td>
+                <td> <i class="fa fa-edit"></i> </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -222,7 +245,7 @@
     </div>
 
     <div class="sidebar">
-      <h4><i class="fa fa-bell" aria-hidden="true"></i> Notifications</h4>
+      <h4><i class="fa fa-solid fa-bell" aria-hidden="true"></i> Notifications</h4>
       
       <div class="balance">
         <i class="fas fa-0 icon"></i>
@@ -245,34 +268,9 @@
           <span>Emergency Meeting By 8am 14 Dec</span>
         </div>
       </div>
-      
-    
-
     </div>
   </div>
   <script>
-    function myX() {
-  var x = document.getElementById("navigator");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function reg() {
-  var y = document.getElementById("files");
-  var x = document.getElementById("doc");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    y.style.display="none";
-
-  } else {
-    alert("Registerd as Incoming ");
-    x.style.display = "none";
-    y.style.display="flex";
-  }
-}
 
 function createDoc() {
   var y = document.getElementById("files");
@@ -287,6 +285,24 @@ function createDoc() {
   }
 }
 
+function docfile() {
+  var x = document.getElementById("docfile");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+    function myX() {
+  var x = document.getElementById("navigator");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
   </script>
 </body>
 </html>
