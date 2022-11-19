@@ -194,6 +194,20 @@ nav{
 .doc-text>button{
   padding: 5px 10px;
   cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+}
+.doc-text i{
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.doc-text textarea{
+  opacity: 50%;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 10px;
 }
 
 .wrap{
