@@ -174,6 +174,22 @@ nav{
   margin-top: -200px;
   opacity: 90%;
   display: none;
+  padding: 20px;
+}
+
+.doc-text span{
+  font-weight: bold;
+  font-size: 10px
+}
+.doc-text h3{
+  font-weight: bold;
+  text-transform: capitalize;
+
+  font-size: 15px;
+}
+
+.doc-text p{
+  font-size: 10px;
 }
 .doc-text>button{
   padding: 5px 10px;
