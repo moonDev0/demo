@@ -162,6 +162,22 @@ nav{
   color: black;
   font-weight: bold;
   background-color: #eee;
+  cursor: pointer;
+}
+.doc-text{
+  width: 68%;
+  height: 450px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  margin-top: -200px;
+  opacity: 90%;
+  display: none;
+}
+.doc-text>button{
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .wrap{

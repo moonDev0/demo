@@ -88,11 +88,17 @@
           <button style="padding:10px; border-radius: 10px;" >Submit</button>
         </div>
       </div>
+
       <div class="history_lists" id="files">
         <div class="list1 list">
           <div class="row">
             <h4>Incoming Files</h4>
             <a href="#">See all</a>
+          </div>
+          <div class="doc-text" id="docfile">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, ratione.</p>
+            <button>Forward</button>
+            <button onclick="docfile()">Close</button>
           </div>
           <table>
             <thead>
@@ -104,42 +110,46 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr onclick="docfile()">
                 <td>101</td>
                 <td>2, Aug, 2022</td>
                 <td>Sam Tonny</td>
                 <td>example@mail.com</td>
                 <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
+               
+              <tr onclick="docfile()">
                 <td>102</td>
                 <td>29, July, 2022</td>
                 <td>Code Info</td>
                 <td>example@mail.com</td>
                 <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
+
+              <tr onclick="docfile()">
                 <td>104</td>
                 <td>15, July, 2022</td>
                 <td>Jhon David</td>
                 <td>example@mail.com</td>
                 <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
+
+              <tr onclick="docfile()">
                 <td>103</td>
                 <td>5, July, 2022</td>
                 <td>Salina Gomiz</td>
                 <td>example@mail.com0</td>
                 <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
+
+              <tr onclick="docfile()">
                 <td>105</td>
                 <td>29, June, 2022</td>
                 <td>Gomiz</td>
                 <td>example@mail.com</td>
                 <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
+              <tr onclick="docfile()">
                 <td>106</td>
                 <td>28, June, 2022</td>
                 <td>Elyana Jhon</td>
@@ -165,14 +175,15 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr onclick="docfile()">
                 <td>201</td>
                 <td>2, Aug, 2022</td>
                 <td>Sam Tonny</td>
                 <td>example@mail.com</td>
                 <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
+
+              <tr onclick="docfile()">
                 <td>202</td>
                 <td>29, July, 2022</td>
                 
@@ -180,7 +191,8 @@
                 <td>example@mail.com</td>
                 <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
+
+              <tr onclick="docfile()">
                 <td>203</td>
                 <td>15, July, 2022</td>
               
@@ -188,21 +200,24 @@
                 <td>example@mail.com</td>
                 <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
+
+              <tr onclick="docfile()">
                 <td>204</td>
                 <td>5, July, 2022</td>
                 <td>Salina Gomiz</td>
                 <td>example@mail.com0</td>
                 <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
+
+              <tr onclick="docfile()">
                 <td>205</td>
                 <td>29, June, 2022</td>
                 <td>Gomiz</td>
                 <td>example@mail.com</td>
                 <td> <i class="fa fa-edit"></i> </td>
               </tr>
-              <tr>
+
+              <tr onclick="docfile()">
                 <td>206</td>
                 <td>28, June, 2022</td>
                 <td>Elyana Jhon</td>
@@ -255,6 +270,16 @@ function createDoc() {
     y.style.display="flex";
   }
 }
+
+function docfile() {
+  var x = document.getElementById("docfile");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 
     function myX() {
   var x = document.getElementById("navigator");
